@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+<div>
+ <div class="container">
+     <table class="table table-striped table-inverse">
+         <thead class="thead-inverse">
+             <tr>
+                 <th>Subject_ID</th>
+                 <th>Name</th>
+                 <th>Room</th>
+             </tr>
+             </thead>
+             <tbody>
+                    <% classes.forEach(function(s) { %>
+                        <tr>
+                          <td><a href ="/classdetail/<%= s.subject_id %>"><%= s.subject_id %></a></td>
+                          <td><%= s.subject_name%></td>
+                          <td><%= s.room %></td>
+                     
+                        </tr>
+                      <% }); %>
+             </tbody>
+     </table>
+ </div>
+</div>
+    
+<% include ../partials/footer %>

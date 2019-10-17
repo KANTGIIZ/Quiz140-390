@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+<div class="container">
+<h1>Aniseed Syrup</h1>
+<div class="form-group">
+    <label for="">ID</label>
+    <input type="text" value="<%= detail.ProductID %>" readonly
+      class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+    <small id="helpId" class="form-text text-muted">Help text</small>
+</div>
+
+<div class="form-group">
+    <label for="">Name</label>
+    <input type="text" value="<%= detail.ProductName %>" readonly
+      class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+    <small id="helpId" class="form-text text-muted">Help text</small>
+</div>
+
+<div class="form-group">
+    <label for="">Quantity Per Unit</label>
+    <input type="text" value="<%= detail.QuantityPerUnit %>" readonly
+      class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+    <small id="helpId" class="form-text text-muted">Help text</small>
+</div>
+
+<div class="form-group">
+    <label for="">Unit Price</label>
+    <input type="text" value="<%= detail.UnitsPrice %>" readonly
+      class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+    <small id="helpId" class="form-text text-muted">Help text</small>
+</div>
+
+<div class="form-group">
+    <label for="">Unit In Stock</label>
+    <input type="text" value="<%= detail.UnitsInStock %>" readonly
+      class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+    <small id="helpId" class="form-text text-muted">Help text</small>
+</div>
+<p class="lead">
+    <a class="btn btn-primary btn-lg" href="/product" role="button"><< Back to Product List</a>
+</p>
+</div>
+<% include ../partials/footer %>

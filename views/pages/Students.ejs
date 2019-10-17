@@ -1,0 +1,28 @@
+<% include ../partials/header %>
+<div  class="container"  >
+        <table class="table table-drack">
+    <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Firstname</th>
+              <th scope="col">Lastname</th>
+              <th scope="col">Major</th>
+    </thead>
+    <tbody>
+           <th scope="row"></th>        
+            <tr>
+          <% profile.students.forEach(function(students) { %>
+            <tr>
+              <td><%= students.sid %></td>
+              <td><%= students.name.split(" ")[0] %></td>
+              <td><%= students.name.split(" ")[1] %></td>
+              <td><%= students.name.split(" ")[2] %></td>
+              <td><%= students.major %></td>
+            </tr>
+          <% }); %>
+       
+    </tbody>
+    </table>      
+    </div>
+<% include ../partials/footer %>

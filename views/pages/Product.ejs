@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+<div  class="container"  >
+  <h1>Product</h1>
+    <table class="table table-light">
+<thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Action</th>
+</thead>
+<tbody>
+       <th scope="row"></th>        
+        <tr>
+      <% product.forEach(function(productes) { %>
+        <tr>
+          <td><%= productes.ProductID %></td>
+          <td><%= productes.ProductName %></td>
+          <td scope="row">
+            <a class="btn btn-info" href="/productdetail/<%= productes.ProductID%>">
+                View Details
+            </a>
+        </td>
+        </tr>
+      <% }); %>
+   
+</tbody>
+</table>      
+</div>
+<% include ../partials/footer %>
